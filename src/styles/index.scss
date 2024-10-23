@@ -1,0 +1,23 @@
+//size
+$tablet: 999px;
+$mobile: 599px;
+
+//font
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+//common
+@import './common/reset';
+@import './common/layout';
+@import './common/header';
+@import './common/footer';
+
+//main
+@import './main/home';
+@import './main/banner';
+@import './main/gnbbtn';
+
+//sub
+@import './sub/client';
+@import './sub/info';
+@import './sub/manager';
+@import './sub/commonbutton';

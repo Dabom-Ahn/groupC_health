@@ -1,0 +1,14 @@
+.footer {
+	width: 100%;
+	padding: 60px 15vw;
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	p {
+		font: 200 0.9rem/1 'raleway';
+		color: #000;
+		margin-bottom: 10px;
+	}
+}
