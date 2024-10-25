@@ -4,7 +4,7 @@ import Banner from './Banner';
 import GnbBtn from './GnbBtn';
 
 export default function Home() {
-	const gnbArr = ['client', 'manager', 'info'];
+	const gnbArr = ['client', 'manager', 'info', 'login'];
 	const [backgroundColor, setBackgroundColor] = useState('#fff'); // 기본 배경색 설정
 	const [isTransitioning, setIsTransitioning] = useState(false); // 배경 전환 중인지 상태 관리
 
@@ -18,6 +18,8 @@ export default function Home() {
 			newColor = '#01d556';
 		} else if (data === 'info') {
 			newColor = '#595959';
+		} else if (data === 'login') {
+			newColor = '#000000';
 		}
 
 		// 배경색을 변경하고 애니메이션 효과 실행

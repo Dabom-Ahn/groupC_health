@@ -67,3 +67,26 @@ export const infoArr = [
 		path: 'https://www.longtermcare.or.kr/npbs/r/k/501/selectWimItmPrdctGuid.web?menuId=npe0000000730&zoomSize='
 	}
 ];
+
+export const loginArr = [
+	{
+		label: '로그인정보1',
+		path: '#'
+	},
+	{
+		label: '로그인정보2',
+		path: '#'
+	},
+	{
+		label: '로그인정보3',
+		path: '#'
+	},
+	{
+		label: '로그인정보4',
+		path: '#'
+	},
+	{
+		label: '로그인정보5',
+		path: '#'
+	}
+];

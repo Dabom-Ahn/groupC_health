@@ -4,6 +4,7 @@ import Footer from './components/common/Footer';
 import Manager from './components/sub/Manager';
 import Client from './components/sub/Client';
 import Info from './components/sub/Info';
+import Login from './components/sub/Login';
 import { Route, Routes } from 'react-router-dom';
 
 export default function App() {
@@ -12,9 +13,10 @@ export default function App() {
 			<Header />
 			<Routes>
 				<Route path='/' element={<Home />} />
-				<Route path='/manager' element={<Manager />} />
-				<Route path='/client' element={<Client />} />
-				<Route path='/info' element={<Info />} />
+				<Route path='/clientlogin' element={<ClientLogin />} />
+				<Route path='/managerlogin' element={<ManagerLogin />} />
+				<Route path='/managerwithoutlogin' element={<ManagerWithoutLogin />} />
+				<Route path='/firstfollow' element={<FirstFollow />} />
 			</Routes>
 			<Footer />
 		</>

@@ -1,28 +1,30 @@
 .header {
-	width: 100%;
-	padding: 30px 15vw;
+	width: 100vw;
+	padding: 30px 15px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 
 	.logo1,
 	.logo2 {
+		width: 10vw;
 		margin-right: 20px;
 	}
 
 	.search-form {
 		display: flex;
 		gap: 10px;
-		flex-basis: 70%;
+		width: 60vw;
 
 		input {
 			padding: 10px;
 			border: 1px solid #ccc;
 			border-radius: 10px;
-			width: 80%;
+			width: 40vw;
 		}
 
 		button {
+			margin: 0px;
 			padding: 10px 20px;
 			background-color: #ff0000;
 			color: #fff;
