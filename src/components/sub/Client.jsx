@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import LinkMenu from './LinkMenu';
+import LinkMenu from './subdetail/LinkMenu';
 import { clientArr } from '../../data/commonData';
 import Banner from '../main/Banner';
 

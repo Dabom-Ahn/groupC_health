@@ -1,5 +1,4 @@
 import { useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
 
 export default function Layout({ title, children }) {
 	const { pathname } = useLocation();
@@ -9,16 +8,10 @@ export default function Layout({ title, children }) {
 	if (pathname === '/') currentClass = 'main';
 	else currentClass = title.toLowerCase();
 
-	useEffect(() => {
-		window.scrollTo({ top: 0 });
-	}, []);
-
 	return (
-		<>
-			<main className={currentClass}>
-				{pathname !== '/' && <h1>{title}</h1>}
-				<section>{children}</section>
-			</main>
-		</>
+		<main className={currentClass}>
+			{pathname !== '/' && <h1>{title}</h1>}
+			<section>{children}</section>
+		</main>
 	);
 }
