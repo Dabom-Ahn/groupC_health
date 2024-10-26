@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function LinkMenu({ linkArr }) {
+export default function LinkMenu({ linkArr, title }) {
 	const [Index, setIndex] = useState(null);
 
 	return (
-		<>
+		<div className={`${title}Menu`}>
 			{linkArr.map((el, idx) => (
 				<Link
 					className={Index === idx ? 'btnActive' : 'btn'}
@@ -16,6 +16,6 @@ export default function LinkMenu({ linkArr }) {
 					{el.label}
 				</Link>
 			))}
-		</>
+		</div>
 	);
 }

@@ -49,7 +49,8 @@ const modalOverlayStyle = {
 	backgroundColor: 'rgba(0, 0, 0, 0.5)',
 	display: 'flex',
 	alignItems: 'center',
-	justifyContent: 'center'
+	justifyContent: 'center',
+	zIndex: 1000
 };
 
 const modalContentStyle = {
@@ -57,5 +58,20 @@ const modalContentStyle = {
 	padding: '20px',
 	borderRadius: '8px',
 	width: '300px',
-	textAlign: 'center'
+	textAlign: 'center',
+	border: '2px solid red', // 빨간 테두리 추가
+	boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', // 그림자 효과
+	animation: 'fadeIn 0.5s' // 애니메이션 효과 추가
 };
+
+// 애니메이션 효과 추가
+const styleSheet = document.styleSheets[0];
+styleSheet.insertRule(
+	`
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+`,
+	styleSheet.cssRules.length
+);

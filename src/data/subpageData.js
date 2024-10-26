@@ -1,5 +1,3 @@
-// src/data/commonData.js
-
 export const clientArr = [
 	{
 		label: '장기요양 인정신청',

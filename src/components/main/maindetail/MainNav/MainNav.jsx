@@ -1,21 +1,20 @@
-import { useState } from 'react';
 import MainNavBtn from './MainNavBtn';
-import BackgroundChanger from './BackgroundChanger';
+import ColorChanger from '../../../common/ColorChanger';
 // import NoticeBanner from '../Banner/NoticeBanner';
 
-export default function BackgroundChange() {
+export default function MainNav() {
 	const navArr = ['client', 'manager'];
-	const [selectedNav, setSelectedNav] = useState(null);
-
-	// MainNavBtn 클릭 핸들러
-	const handleClick = data => {
-		setSelectedNav(data);
-	};
 
 	return (
 		<section className='MainNav'>
-			<BackgroundChanger colorKey={selectedNav} />
-			<MainNavBtn navArr={navArr} onClick={handleClick} />
+			{/* ColorChanger를 사용하여 경로에 따라 텍스트 색상 변경 */}
+			<ColorChanger>
+				{color => (
+					<div style={{ color }}>
+						<MainNavBtn navArr={navArr} />
+					</div>
+				)}
+			</ColorChanger>
 			{/* <NoticeBanner /> */}
 		</section>
 	);
