@@ -1,4 +1,4 @@
-import hwellLogo from '../../../pic/logo/logo_2.png';
+import hwellLogo from '../../../../pic/logo/logo_2.png';
 
 export default function FooterInfo() {
 	return (

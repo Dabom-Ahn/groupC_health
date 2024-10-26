@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import hwellLogo from '../../../pic/logo/logo_2.png';
-import LTCLogo from '../../../pic/logo/logo_1.png';
+import hwellLogo from '../../../../pic/logo/logo_2.png';
+import LTCLogo from '../../../../pic/logo/logo_1.png';
 
 export default function LogoLink() {
 	return (

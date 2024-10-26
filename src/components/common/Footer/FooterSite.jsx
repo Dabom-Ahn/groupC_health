@@ -1,7 +1,7 @@
-import privacyLogo from '../../../pic/footericons/privacyLogo.png';
-import waLogo from '../../../pic/footericons/waLogo.png';
-import ismsLogo from '../../../pic/footericons/ismsLogo.png';
-import { nhisOptions, agencyOptions } from '../../data/footerData';
+import privacyLogo from '../../../../pic/footericons/privacyLogo.png';
+import waLogo from '../../../../pic/footericons/waLogo.png';
+import ismsLogo from '../../../../pic/footericons/ismsLogo.png';
+import { nhisOptions, agencyOptions } from '../../../data/footerData';
 import { useRef } from 'react';
 
 export default function FooterSite() {

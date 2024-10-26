@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import MainNavBtn from './MainNavBtn';
 import BackgroundChanger from './BackgroundChanger';
-import NoticeBanner from '../Banner/NoticeBanner';
+// import NoticeBanner from '../Banner/NoticeBanner';
 
 export default function BackgroundChange() {
 	const navArr = ['client', 'manager'];
@@ -16,7 +16,7 @@ export default function BackgroundChange() {
 		<section className='MainNav'>
 			<BackgroundChanger colorKey={selectedNav} />
 			<MainNavBtn navArr={navArr} onClick={handleClick} />
-			<NoticeBanner />
+			{/* <NoticeBanner /> */}
 		</section>
 	);
 }
