@@ -1,8 +1,8 @@
 import Home from './components/main/Home';
-import Header from './components/common/Header';
-import Footer from './components/common/Footer';
-import Manager from './components/sub/Manager';
-import Client from './components/sub/Client';
+import Header from './components/common/Header/Header';
+import Footer from './components/common/Footer/Footer';
+// import Manager from './components/sub/Manager';/
+// import Client from './components/sub/Client';
 import { Route, Routes } from 'react-router-dom';
 
 export default function App() {
@@ -11,8 +11,8 @@ export default function App() {
 			<Header />
 			<Routes>
 				<Route path='/' element={<Home />} />
-				<Route path='/client' element={<Client />} />
-				<Route path='/manager' element={<Manager />} />
+				{/* <Route path='/client' element={<Client />} /> */}
+				{/* <Route path='/manager' element={<Manager />} /> */}
 			</Routes>
 			<Footer />
 		</>

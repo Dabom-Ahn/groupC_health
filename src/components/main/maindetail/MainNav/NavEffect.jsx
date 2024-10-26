@@ -4,10 +4,8 @@ export default function NavEffect({ data, idx, isActive, onClick, selectedButton
 	const navigate = useNavigate();
 
 	const navArrKor = {
-		client: '보호자(개인)',
-		manager: '관리자',
-		info: '기타정보',
-		login: '로그인정보'
+		client: '보호자',
+		manager: '관리자'
 	};
 
 	// 클릭 이벤트 핸들러
@@ -24,10 +22,6 @@ export default function NavEffect({ data, idx, isActive, onClick, selectedButton
 					return 'translateX(-100vw)';
 				case 'manager':
 					return 'translateX(100vw)';
-				case 'info':
-					return 'translateY(-100vh)';
-				case 'login':
-					return 'translateY(100vh)';
 				default:
 					return 'translateX(0)';
 			}
@@ -39,19 +33,17 @@ export default function NavEffect({ data, idx, isActive, onClick, selectedButton
 	const moveOutStyle = getMoveOutStyle();
 
 	return (
-		<div className={`mainNavWrapper`}>
-			<div
-				className={`navItem-${data} ${isActive}`}
-				onClick={handleClick}
-				style={{
-					opacity: opacityStyle,
-					transition: 'opacity 0.2s, transform 1s ease',
-					transform: moveOutStyle,
-					cursor: 'pointer'
-				}}>
-				<h3>{navArrKor[data] || data}</h3>
-				<img src={`/images/${data}.png`} alt={`${navArrKor[data] || data} 이미지`} />
-			</div>
+		<div
+			className={`navitem${data} ${isActive}`}
+			onClick={handleClick}
+			style={{
+				opacity: opacityStyle,
+				transition: 'opacity 0.2s, transform 1s ease',
+				transform: moveOutStyle,
+				cursor: 'pointer'
+			}}>
+			<h3>{navArrKor[data] || data}</h3>
+			<img src={`pic/mainnav/${data}.png`} alt={`${navArrKor[data] || data} 이미지`} />
 		</div>
 	);
 }

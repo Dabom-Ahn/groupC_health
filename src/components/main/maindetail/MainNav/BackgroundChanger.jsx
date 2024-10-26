@@ -3,9 +3,7 @@ import { useState, useEffect } from 'react';
 export default function BackgroundChanger({ colorKey }) {
 	const colorMap = {
 		client: '#fd0059',
-		manager: '#01d556',
-		info: '#595959',
-		login: '#000000'
+		manager: '#01d556'
 	};
 	const newColor = colorMap[colorKey] || '#fff';
 
@@ -31,7 +29,7 @@ export default function BackgroundChanger({ colorKey }) {
 
 	return (
 		<div
-			className={`main-container ${isTransitioning ? 'transition' : ''}`}
+			className={`backgroundchanger${isTransitioning ? 'transition' : ''}`}
 			style={{
 				backgroundColor,
 				transition: 'background-color 0.5s linear'

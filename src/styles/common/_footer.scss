@@ -1,14 +1,29 @@
 .footer {
-	width: 100%;
-	padding: 60px 15vw;
-	background-color: transparent;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
+	width: 100vw;
 
-	p {
-		font: 200 0.9rem/1 'raleway';
-		color: #000;
-		margin-bottom: 10px;
+	.footerInfo {
+		width: 100vw;
+
+		.footerLogo {
+			width: 50px;
+		}
+
+		.footerTxt {
+			.txt1,
+			.txt2,
+			.txt3 {
+				font: 100 1rem/1 'arial';
+			}
+		}
+
+		.footerSNS {
+			.sns1,
+			.sns2 {
+				flex: grid;
+			}
+		}
+	}
+	.footerSite {
+		width: 100vw;
 	}
 }
