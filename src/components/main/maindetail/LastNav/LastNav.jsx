@@ -13,21 +13,23 @@ export default function LastNav() {
 	};
 
 	return (
-		<div className='last-nav'>
-			{lastNavData.map((service, index) => (
-				<div key={index} className='nav-section'>
-					<h2>{service.title}</h2>
-					<ul>
-						{service.items.map((item, itemIndex) => (
-							<li key={itemIndex}>
-								<Link to={item.link} onClick={() => handleLinkClick(item.link)}>
-									{item.name}
-								</Link>
-							</li>
-						))}
-					</ul>
-				</div>
-			))}
-		</div>
+		<section className='lastNavSec'>
+			<div className='lastNav'>
+				{lastNavData.map((service, index) => (
+					<div key={index} className='navSection'>
+						<h2>{service.title}</h2>
+						<ul>
+							{service.items.map((item, itemIndex) => (
+								<li key={itemIndex}>
+									<Link to={item.link} onClick={() => handleLinkClick(item.link)}>
+										{item.name}
+									</Link>
+								</li>
+							))}
+						</ul>
+					</div>
+				))}
+			</div>
+		</section>
 	);
 }
