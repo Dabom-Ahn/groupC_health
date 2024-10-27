@@ -12,6 +12,7 @@
 		flex-wrap: wrap;
 		align-items: center;
 		gap: 20px;
+		margin: 10px;
 
 		.logo1,
 		.logo2 {
@@ -44,7 +45,7 @@
 					outline: none;
 					border: 1px solid transparent;
 					border-radius: 20px;
-					font: 100 0.8rem/1 'Sacramento';
+					font: 100 0.8rem/1 'Gothic A1';
 					text-align: center;
 					padding: 2px;
 					line-height: 3vh;
@@ -55,7 +56,7 @@
 					height: 3vh;
 					border: 1px solid red;
 					border-radius: 20px;
-					font: 600 0.8rem/1 'Sacramento';
+					font: 600 0.8rem/1 'Gothic A1';
 					text-align: center;
 					padding: 2px;
 					background-color: red;
@@ -82,12 +83,12 @@
 				margin-bottom: 15px;
 				border-radius: 3px;
 				border: 0px solid transparent;
-				font: 600 0.8rem/1 'Sacramento';
+				font: 600 0.8rem/1 'Gothic A1';
 				line-height: 20px;
 				padding: 2px;
 			}
 			p {
-				font: 100 1rem/1 'Sacramento';
+				font: 100 1rem/1 'Gothic A1';
 			}
 		}
 	}
@@ -124,7 +125,7 @@
 			.submenuItem2,
 			.submenuItem3,
 			.submenuItem4 {
-				font: 100 0.8rem/1 'Sacramento';
+				font: 100 0.8rem/1 'Gothic A1';
 			}
 		}
 	}

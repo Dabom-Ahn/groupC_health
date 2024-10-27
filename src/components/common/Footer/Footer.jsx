@@ -5,8 +5,10 @@ import FooterSite from './FooterSite';
 export default function Footer() {
 	return (
 		<footer className='footer'>
-			<FooterInfo />
-			<FooterSNS />
+			<div className='upperfooter'>
+				<FooterInfo />
+				<FooterSNS />
+			</div>
 			<FooterSite />
 		</footer>
 	);
