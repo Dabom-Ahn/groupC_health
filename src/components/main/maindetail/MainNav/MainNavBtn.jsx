@@ -15,7 +15,7 @@ export default function MainNavBtn({ navArr, onClick }) {
 	};
 
 	return (
-		<div className='MainNavBtn'>
+		<div className='mainNavBtn'>
 			{navArr.map((data, idx) => {
 				const isActive = pathname === '/' + data ? 'on' : '';
 				return (

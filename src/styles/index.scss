@@ -8,13 +8,12 @@ $mobile: 599px;
 
 //common
 @import './common/reset';
-@import './common/layout';
 @import './common/header';
 @import './common/footer';
 
 //main
 @import './main/home';
-@import './main/mainnavbtn';
+@import './main/mainnav';
 @import './main/firstfollow';
 
 //sub

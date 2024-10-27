@@ -1,22 +1,9 @@
-import { useState } from 'react';
 import ImageSlider from './ImageSlider'; // ImageSlider 컴포넌트 import
 import { process1, process2 } from '../../../../data/firstvisitImagedata';
 
-export default function FirstFollow() {
-	const [showGallery, setShowGallery] = useState(false);
-
-	const toggleGallery = () => {
-		setShowGallery(prevState => !prevState);
-	};
-
+export default function FirstFollow({ showGallery, toggleGallery }) {
 	return (
-		<div className='firstGallery'>
-			<div className='firstfollow'>
-				<p>CLICK!</p>
-				<div className='followBanner' onClick={toggleGallery} style={{ cursor: 'pointer' }}>
-					<p>노인장기요양보험이란</p>
-				</div>
-			</div>
+		<>
 			{showGallery && (
 				<>
 					<section>
@@ -29,6 +16,6 @@ export default function FirstFollow() {
 					</section>
 				</>
 			)}
-		</div>
+		</>
 	);
 }

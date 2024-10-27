@@ -12,10 +12,10 @@ export default function ColorChanger({ children, applyToBackground = '#fff', app
 				setColor('#000000'); // 홈 경로일 때 흰색
 				break;
 			case '/client':
-				setColor('#FF0000'); // 보호자일 때 빨강색
+				setColor('#db456a'); // 보호자일 때 빨강색
 				break;
 			case '/manager':
-				setColor('#00FF00'); // 관리자일 때 초록색
+				setColor('#95B13D'); // 관리자일 때 초록색
 				break;
 			default:
 				setColor('#000000'); // 기본 색상 (검정색)
