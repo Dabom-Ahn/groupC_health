@@ -1,13 +1,131 @@
 .header {
 	width: 100vw;
-	padding: 30px 15px;
+	padding: 15px;
 	display: flex;
-	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
 	align-items: center;
 
-	.logo1,
-	.logo2 {
-		width: 10vw;
-		margin-right: 20px;
+	.upperheader {
+		width: 80vw;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 20px;
+
+		.logo1,
+		.logo2 {
+			width: 8vw;
+			margin-right: 20px;
+		}
+
+		.searchForm {
+			width: 50vw;
+			height: 5vh;
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			align-items: center;
+			border: 1px solid #000;
+			border-radius: 20px;
+			padding: 10px;
+
+			.searchFormDefault {
+				width: 50vw;
+				height: 3vh;
+				display: flex;
+				flex-wrap: nowrap;
+				align-items: center;
+				justify-content: space-between;
+
+				input {
+					width: 40vw;
+					height: 3vh;
+					outline: none;
+					border: 1px solid transparent;
+					border-radius: 20px;
+					font: 100 0.8rem/1 'Sacramento';
+					text-align: center;
+					padding: 2px;
+					line-height: 3vh;
+				}
+
+				button {
+					width: 5vw;
+					height: 3vh;
+					border: 1px solid red;
+					border-radius: 20px;
+					font: 600 0.8rem/1 'Sacramento';
+					text-align: center;
+					padding: 2px;
+					background-color: red;
+					color: #fff;
+					line-height: 3vh; /* 버튼의 높이와 동일하게 설정 */
+				}
+			}
+		}
+
+		.headersns {
+			width: 5vw;
+			display: flex;
+			flex-wrap: nowrap;
+			margin-left: 20px;
+			gap: 20px;
+		}
+
+		.searchResultsContainer {
+			width: 80vw;
+			.closeButton {
+				width: 40px;
+				height: 20px;
+				margin-top: 5px;
+				margin-bottom: 15px;
+				border-radius: 3px;
+				border: 0px solid transparent;
+				font: 600 0.8rem/1 'Sacramento';
+				line-height: 20px;
+				padding: 2px;
+			}
+			p {
+				font: 100 1rem/1 'Sacramento';
+			}
+		}
+	}
+
+	.headerNav {
+		width: 80vw;
+		display: flex;
+		padding: 10px;
+		margin: 30px;
+		border-bottom: 0.5px solid #333;
+		justify-content: space-between;
+
+		.menuItem0 a,
+		.menuItem1 a,
+		.menuItem2 a,
+		.menuItem3 a,
+		.menuItem4 a {
+			font: 600 1rem/1 'Sacramento';
+		}
+
+		.modalMenu0,
+		.modalMenu1,
+		.modalMenu2,
+		.modalMenu3,
+		.modalMenu4 {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 5px;
+			margin-top: 20px;
+
+			.submenuItem0,
+			.submenuItem1,
+			.submenuItem2,
+			.submenuItem3,
+			.submenuItem4 {
+				font: 100 0.8rem/1 'Sacramento';
+			}
+		}
 	}
 }

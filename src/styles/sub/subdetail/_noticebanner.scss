@@ -1,0 +1,11 @@
+.NoticeBanner {
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+
+	.bannerItem img {
+		width: 30vw;
+		height: auto;
+		object-fit: contain;
+	}
+}

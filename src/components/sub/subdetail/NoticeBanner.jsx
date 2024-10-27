@@ -17,8 +17,8 @@ export default function NoticeBanner() {
 		<div className='NoticeBanner'>
 			{posts.length > 0 ? (
 				posts.map((post, idx) => (
-					<div key={idx} className='banner-item'>
-						<img src={post.image} alt={`Banner ${idx + 1}`} />
+					<div key={idx} className='bannerItem'>
+						<img src={post.image_url} alt={`Banner ${idx + 1}`} />
 						<h3>{post.title}</h3>
 						<a href={post.link} target='_blank' rel='noopener noreferrer'>
 							More info
