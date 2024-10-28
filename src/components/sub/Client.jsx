@@ -6,14 +6,17 @@ import LinkMenu from './subdetail/LinkMenu';
 
 export default function Client() {
 	return (
-		<>
-			{/* <Notice /> */}
-			{/* <NoticeBanner /> */}
-			<Link className='Login' to='/login'>
-				로그인/회원가입바로가기
-			</Link>
-			{/* <Map /> */}
-			<LinkMenu linkArr={clientArr} title='client' />
-		</>
+		<main className='client'>
+			<section>
+				{/* <NoticeBanner /> */}
+				<div className='loginBanner'>
+					<Link className='Login' to='/login'>
+						로그인/회원가입바로가기
+					</Link>
+				</div>
+				{/* <Map /> */}
+				<LinkMenu linkArr={clientArr} title='client' />
+			</section>
+		</main>
 	);
 }
