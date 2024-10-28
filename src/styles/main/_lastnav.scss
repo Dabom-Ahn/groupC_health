@@ -2,68 +2,71 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+
 	.lastNav {
 		width: 80vw;
-		height: 50vh;
+		height: 40vh;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		margin: 5vw;
 
-		.lastNav {
-			margin: 5vw;
+		.navSection {
+			width: 22%;
+			border-radius: 20px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			padding: 20px;
+			border: 1px solid #dcdcdc;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 
-			.navSection {
-				width: 22%;
-				border-radius: 10px;
-				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-				padding: 20px;
-				border: 1px solid #dcdcdc;
+			h2 {
+				font: 600 1.2rem/1 'Gothic A1';
+				margin-bottom: 10px;
+				text-align: left;
+				color: #333;
+			}
+
+			ul {
+				width: 100%;
+				height: 100%;
+				background-color: #fff;
 				display: flex;
 				flex-direction: column;
-				justify-content: flex-start;
-				line-height: 1.5;
+				align-items: center;
+				justify-content: center;
+				border-radius: 20px;
+				padding: 5px;
+				gap: 10px;
 
-				h2 {
-					font: 600 1.2rem/1 'Gothic A1';
-					margin-bottom: 15px;
-					text-align: left;
-					color: #333;
-				}
+				li {
+					font: 400 0.92rem/1.5 'Gothic A1';
+					color: #555;
+					a {
+						color: inherit;
+						text-decoration: none;
+						transition: color 0.3s;
 
-				ul {
-					padding-left: 20px;
-					background-color: #fff;
-
-					li {
-						margin: 8px 0;
-						font: 400 1rem/1.5 'Gothic A1';
-						color: #555;
-
-						a {
-							color: inherit;
-							text-decoration: none;
-							transition: color 0.3s;
-
-							&:hover {
-								color: #007bff; /* 링크에 마우스가 올라갔을 때 색상 */
-							}
+						&:hover {
+							color: #007bff; /* 링크에 마우스가 올라갔을 때 색상 */
 						}
 					}
 				}
+			}
 
-				/* 각 섹션별 배경색 설정 */
-				&:nth-child(1) {
-					background-color: #e6f0ff; /* 파란색 계열 */
-				}
-				&:nth-child(2) {
-					background-color: #f5f0ff; /* 보라색 계열 */
-				}
-				&:nth-child(3) {
-					background-color: #fff9e6; /* 노란색 계열 */
-				}
-				&:nth-child(4) {
-					background-color: #f0f0f0; /* 회색 계열 */
-				}
+			/* 각 섹션별 배경색 설정 */
+			&:nth-child(1) {
+				background-color: #e6f0ff; /* 파란색 계열 */
+			}
+			&:nth-child(2) {
+				background-color: #f5f0ff; /* 보라색 계열 */
+			}
+			&:nth-child(3) {
+				background-color: #fff9e6; /* 노란색 계열 */
+			}
+			&:nth-child(4) {
+				background-color: #f0f0f0; /* 회색 계열 */
 			}
 		}
 	}

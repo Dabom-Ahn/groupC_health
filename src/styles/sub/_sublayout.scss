@@ -1,28 +1,27 @@
 .client,
 .manager {
 	width: 100vw;
-	height: 100vh;
+	height: 70%; // 100vh 중 70% 영역 사용
 	display: flex;
 	flex-direction: column;
+	align-content: center;
 	align-items: center;
-	padding: 5px;
-	margin-top: 5px;
+	// padding: 5px;
+	// margin-top: 5px;
 	margin-bottom: 60px;
 	gap: 30px;
 
 	.upperclient,
 	.uppermanager {
-		border: 1px solid #000;
 		width: 80vw;
 		height: 40%;
 		display: flex;
 		flex-direction: column;
-		// padding-top: 5vh;
-		// padding-bottom: 5vh;
 
 		.NoticeBanner {
 			width: 80vw;
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: center;
 			align-content: center;
 			padding: 10px;
@@ -30,7 +29,6 @@
 			.greeting {
 				width: 50%;
 				padding: 10px;
-				border: 3px solid #f64040;
 				border-radius: 40px;
 				display: flex;
 				justify-content: center;
@@ -46,7 +44,7 @@
 		}
 
 		.bannerItemContainer {
-			width: 90%;
+			width: 100%;
 			height: 60%;
 			display: flex;
 			flex-direction: row;
@@ -59,16 +57,8 @@
 				display: flex;
 				justify-content: center;
 				flex-direction: column;
-				border: 1px solid #333;
 				border-radius: 20px;
-				border: 3px solid #f64040;
 				padding: 5px;
-
-				// img {
-				// 	width: 100%;
-				// 	height: 100%;
-				// 	object-fit: contain;
-				// }
 
 				.noticeContents {
 					width: 100%;
@@ -76,10 +66,6 @@
 					text-align: center;
 					padding: 2vw;
 				}
-
-				// a {
-				// 	font: 300 1rem/1 'Gothic A1';
-				// }
 			}
 		}
 	}
@@ -89,11 +75,12 @@
 		width: 80vw;
 		display: flex;
 		align-items: flex-start;
+		justify-content: space-between;
+		gap: 30px;
 
 		.subMenuContainer {
-			width: 50vw;
+			width: 100%;
 			height: 50%;
-			// border: 1px solid #333;
 			display: flex;
 			justify-content: center;
 
@@ -109,8 +96,6 @@
 
 				.menuTitle {
 					width: 60%;
-					height: auto;
-					border: 3px solid #f64040;
 					border-radius: 20px;
 					padding: 10px;
 
@@ -120,29 +105,10 @@
 					}
 				}
 
-				.itemContainer {
-					width: 80%;
-					height: auto;
-					border: 3px solid #d9d9d9;
-					border-radius: 20px;
-					background-color: #fff;
-					padding: 10px;
-					display: flex;
-					justify-content: center;
-
-					a {
-						font: 500 1rem/1 'Gothic A1';
-						color: #000;
-						text-align: center;
-					}
-				}
-
+				.itemContainer,
 				.lastItemContainer {
-					width: 80%;
-					height: auto;
-					border: 3px solid #f64040;
+					width: 100%;
 					border-radius: 20px;
-					background-color: #999;
 					padding: 10px;
 					display: flex;
 					justify-content: center;
@@ -155,5 +121,58 @@
 				}
 			}
 		}
+	}
+}
+
+// 개별 설정
+.client {
+	.upperclient {
+		.NoticeBanner .greeting {
+			border: 3px solid #f64040;
+		}
+
+		.bannerItemContainer .bannerItem {
+			border: 3px solid #f64040;
+		}
+	}
+
+	.clientMenu .menuTitle {
+		border: 3px solid #f64040;
+	}
+
+	.clientMenu .itemContainer {
+		border: 3px solid #d9d9d9;
+		background-color: #fff;
+	}
+
+	.clientMenu .lastItemContainer {
+		border: 3px solid #f64040;
+		background-color: #999;
+	}
+}
+
+.manager {
+	.uppermanager {
+		.NoticeBanner .greeting {
+			border: 3px solid #0522a3;
+		}
+
+		.bannerItemContainer .bannerItem {
+			border: 3px solid #0522a3;
+		}
+	}
+
+	.managerMenu .menuTitle {
+		border: 3px solid #0522a3;
+	}
+
+	.managerMenu .itemContainer {
+		border: 3px solid #d9d9d9;
+		background-color: #fff;
+	}
+
+	.managerMenu .lastItemContainer {
+		border: 3px solid #0522a3;
+		background-color: #999;
 	}
 }

@@ -28,7 +28,10 @@ export default function MailForm() {
 	};
 
 	return (
-		<article className='mailForm'>
+		<div className='mailForm'>
+			<div className='mailTitle'>
+				<p>contact</p>
+			</div>
 			<div className='formBox'>
 				{/* form에 전송 이벤트 연결 */}
 				<form onSubmit={sendForm} ref={ref_form}>
@@ -57,19 +60,6 @@ export default function MailForm() {
 					</nav>
 				</form>
 			</div>
-
-			<div className='info'>
-				<h2>Information</h2>
-				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit laudantium cupiditate qui?
-					Possimus sint eum obcaecati ut cum ea, praesentium temporibus, quos vel beatae vero esse quisquam expedita
-					animi.
-				</p>
-				<br />
-				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, sequi ipsum. Deleniti nesciunt rerum ex!
-				</p>
-			</div>
-		</article>
+		</div>
 	);
 }
