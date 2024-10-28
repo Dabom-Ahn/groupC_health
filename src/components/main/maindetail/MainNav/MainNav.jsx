@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import MainNavBtn from './MainNavBtn';
-import ColorChanger from '../../../common/ColorChanger';
 import FirstFollow from '../FirstVisit/FirstFollow';
 import NoticeBanner from '../NoticeBanner/NoticeBanner';
 
@@ -14,14 +13,10 @@ export default function MainNav() {
 
 	return (
 		<section className='mainNav'>
-			{/* ColorChanger를 사용하여 경로에 따라 텍스트 색상 변경 */}
-			<ColorChanger>
-				{color => (
-					<div style={{ color }}>
-						<MainNavBtn navArr={navArr} />
-					</div>
-				)}
-			</ColorChanger>
+			{/* MainNavBtn 컴포넌트는 navArr을 전달받아 렌더링 */}
+			<div>
+				<MainNavBtn navArr={navArr} />
+			</div>
 			<div className='firstfollow' onClick={toggleGallery} style={{ cursor: 'pointer' }}>
 				<p>노인장기요양보험이란</p>
 			</div>

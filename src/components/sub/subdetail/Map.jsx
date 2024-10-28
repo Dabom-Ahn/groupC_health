@@ -29,6 +29,27 @@ export default function Map() {
 			markerImg: '/pic/sub/marker1.png',
 			markerSize: new kakao.maps.Size(40, 40),
 			markerOffset: new kakao.maps.Point(116, 99)
+		},
+		{
+			title: '하늘센터(강동2호)',
+			latlng: new kakao.maps.LatLng(37.558105, 127.079071),
+			markerImg: '/pic/sub/marker1.png',
+			markerSize: new kakao.maps.Size(40, 40),
+			markerOffset: new kakao.maps.Point(116, 99) // 마커 오프셋 설정
+		},
+		{
+			title: '재가복지센터',
+			latlng: new kakao.maps.LatLng(37.536837, 127.122423),
+			markerImg: '/pic/sub/marker1.png',
+			markerSize: new kakao.maps.Size(40, 40),
+			markerOffset: new kakao.maps.Point(116, 99)
+		},
+		{
+			title: '한가족센터',
+			latlng: new kakao.maps.LatLng(37.665777, 127.035597),
+			markerImg: '/pic/sub/marker1.png',
+			markerSize: new kakao.maps.Size(40, 40),
+			markerOffset: new kakao.maps.Point(116, 99)
 		}
 	]);
 	const { latlng, markerImg, markerSize, markerOffset } = ref_info.current[Index];
@@ -82,7 +103,9 @@ export default function Map() {
 
 	return (
 		<div className='map'>
-			<h2>요양기관 찾기</h2>
+			<div className='mapTitle'>
+				<p>요양기관 찾기</p>
+			</div>
 
 			{/* 맵, 로드뷰 프레임 */}
 			<figure className='mapFrame'>

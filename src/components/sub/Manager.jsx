@@ -1,7 +1,7 @@
 import { infoArr } from '../../data/subpageData';
 import LinkMenu from './subdetail/LinkMenu';
 import NoticeBanner from './subdetail/NoticeBanner';
-// import Mail from './subdetail/Mail';
+import Mail from './subdetail/Mail';
 
 export default function Manager() {
 	return (
@@ -10,7 +10,7 @@ export default function Manager() {
 				<NoticeBanner />
 			</section>
 			<section className='innermanagersub'>
-				{/* <Mail /> */}
+				<Mail />
 				<LinkMenu linkArr={infoArr} title='manager' />
 			</section>
 		</main>

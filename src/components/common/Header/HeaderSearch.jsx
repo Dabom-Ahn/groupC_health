@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import ColorChanger from '../ColorChanger';
 import { FaHeadset, FaWrench } from 'react-icons/fa';
 
 export default function Search() {
@@ -58,18 +57,14 @@ export default function Search() {
 				</div>
 			</div>
 
-			<ColorChanger>
-				{color => (
-					<div className='headersns'>
-						<Link to='https://www.longtermcare.or.kr/npbs/e/g/550/openCyberCstMain.web?menuId=npe0000000460'>
-							<FaHeadset color={color} size={30} />
-						</Link>
-						<Link to='https://www.longtermcare.or.kr/npbs/auth/login/loginForm.web?menuId=npe0000002160&rtnUrl=&zoomSize='>
-							<FaWrench color={color} size={30} />
-						</Link>
-					</div>
-				)}
-			</ColorChanger>
+			<div className='headersns'>
+				<Link to='https://www.longtermcare.or.kr/npbs/e/g/550/openCyberCstMain.web?menuId=npe0000000460'>
+					<FaHeadset size={30} />
+				</Link>
+				<Link to='https://www.longtermcare.or.kr/npbs/auth/login/loginForm.web?menuId=npe0000002160&rtnUrl=&zoomSize='>
+					<FaWrench size={30} />
+				</Link>
+			</div>
 
 			{/* 검색 결과 창 */}
 			{isOpen && (
