@@ -19,6 +19,10 @@ export const clientArr = [
 	{
 		label: '복지용구 추가급여신청',
 		path: 'https://www.longtermcare.or.kr/npbs/i/a/601/openWelToolPaymtCfrDocChoice.web'
+	},
+	{
+		label: '로그인/회원가입하기',
+		path: 'https://www.longtermcare.or.kr/npbs/auth/login/loginForm.web?menuId=npe0000002160&rtnUrl=&zoomSize='
 	}
 ];
 
@@ -63,6 +67,10 @@ export const infoArr = [
 	{
 		label: '복지용구 품목별 제품안내',
 		path: 'https://www.longtermcare.or.kr/npbs/r/k/501/selectWimItmPrdctGuid.web?menuId=npe0000000730&zoomSize='
+	},
+	{
+		label: '관리자포털 바로가기',
+		path: 'https://www.longtermcare.or.kr/npbs/r/a/104/selectMyBlog.web?ltcAdminSym=34519000100#'
 	}
 ];
 

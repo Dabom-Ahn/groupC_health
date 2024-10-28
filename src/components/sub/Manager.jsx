@@ -1,16 +1,16 @@
-import { Link } from 'react-router-dom';
 import { infoArr } from '../../data/subpageData';
 import LinkMenu from './subdetail/LinkMenu';
-// import NoticeBanner from './subdetail/NoticeBanner';
+import NoticeBanner from './subdetail/NoticeBanner';
+// import Mail from './subdetail/Mail';
 
 export default function Manager() {
 	return (
 		<main className='manager'>
-			{/* <NoticeBanner /> */}
-			<section>
-				<Link className='Login' to='/login'>
-					로그인/회원가입바로가기
-				</Link>
+			<section className='uppermanager'>
+				<NoticeBanner />
+			</section>
+			<section className='innermanagersub'>
+				{/* <Mail /> */}
 				<LinkMenu linkArr={infoArr} title='manager' />
 			</section>
 		</main>

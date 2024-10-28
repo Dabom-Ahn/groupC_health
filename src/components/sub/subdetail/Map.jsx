@@ -81,7 +81,7 @@ export default function Map() {
 	}, [Traffic, kakao]);
 
 	return (
-		<section className='map'>
+		<div className='map'>
 			<h2>요양기관 찾기</h2>
 
 			{/* 맵, 로드뷰 프레임 */}
@@ -117,6 +117,6 @@ export default function Map() {
 					</li>
 				</ul>
 			</nav>
-		</section>
+		</div>
 	);
 }
