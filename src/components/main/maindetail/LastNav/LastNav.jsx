@@ -13,7 +13,7 @@ export default function LastNav() {
 	};
 
 	return (
-		<section className='lastNavSec'>
+		<section className='lastNav'>
 			<div className='lastNav'>
 				{lastNavData.map((service, index) => (
 					<div key={index} className='navSection'>

@@ -14,8 +14,10 @@ $mobile: 599px;
 //main
 @import './main/home';
 @import './main/mainnav';
+@import './main/noticebanner';
 @import './main/firstfollow';
 @import './main/lastnav';
 
 //sub
 @import './sub/client';
+@import './sub/subdetail/subnoticebanner';
