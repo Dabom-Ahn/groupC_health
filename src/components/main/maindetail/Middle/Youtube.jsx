@@ -15,16 +15,16 @@ export default function Youtube() {
 			<div className='youtubecontainer'>
 				{Vids?.map((vid, idx) => {
 					return (
-						<article key={idx}>
-							<h3>
+						<div className='content' key={idx}>
+							<div className='youtubetitle'>
 								<Link to={'/youtube/' + vid.id}>{shortenText(vid.snippet.title, 60)}</Link>
-							</h3>
+							</div>
 							<div className='txt'>
-								<p>{shortenText(vid.snippet.description, 150)}</p>
+								<p>{shortenText(vid.snippet.description, 40)}</p>
 								<span>{combineText(vid.snippet.publishedAt.split('T')[0], '-', '.')}</span>
 							</div>
 							<img className={`thumb${idx}`} src={vid.snippet.thumbnails.high.url} />
-						</article>
+						</div>
 					);
 				})}
 			</div>
