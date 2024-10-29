@@ -8,9 +8,9 @@ export default function Introduction() {
 	// 플리커에서 특정 앨범의 이미지 가져오는 함수
 	const fetchImagesFromAlbum = async () => {
 		try {
-			const flickr_api = 'd668bad5c413bf0ddffd758a70d24692';
-			const myID = '201500116@N03';
-			const photoset_id = '72177720321551011';
+			const flickr_api = import.meta.env.VITE_FLICKR_API;
+			const myID = import.meta.env.VITE_MYID_KEY;
+			const photoset_id = import.meta.env.VITE_PHOTOSET_KEY;
 			const num = 10;
 			const url = `https://www.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=${flickr_api}&user_id=${myID}&photoset_id=${photoset_id}&per_page=${num}&nojsoncallback=1&format=json`;
 
