@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/virtual';
 
 export default function Introduction() {
 	const [images, setImages] = useState([]);
@@ -44,7 +46,7 @@ export default function Introduction() {
 			</div>
 			<div className='photos'>
 				<Swiper
-					slidesPerView={'auto'}
+					slidesPerView={'4'}
 					centeredSlides={true}
 					spaceBetween={30}
 					pagination={{

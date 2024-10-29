@@ -12,20 +12,22 @@ export default function Youtube() {
 	return (
 		<section className='youtube'>
 			{isPending && <p>Loading...</p>}
-			{Vids?.map((vid, idx) => {
-				return (
-					<article key={idx}>
-						<h3>
-							<Link to={'/youtube/' + vid.id}>{shortenText(vid.snippet.title, 60)}</Link>
-						</h3>
-						<div className='txt'>
-							<p>{shortenText(vid.snippet.description, 150)}</p>
-							<span>{combineText(vid.snippet.publishedAt.split('T')[0], '-', '.')}</span>
-						</div>
-						<img className='thumb' src={vid.snippet.thumbnails.high.url} />
-					</article>
-				);
-			})}
+			<div className='youtubecontainer'>
+				{Vids?.map((vid, idx) => {
+					return (
+						<article key={idx}>
+							<h3>
+								<Link to={'/youtube/' + vid.id}>{shortenText(vid.snippet.title, 60)}</Link>
+							</h3>
+							<div className='txt'>
+								<p>{shortenText(vid.snippet.description, 150)}</p>
+								<span>{combineText(vid.snippet.publishedAt.split('T')[0], '-', '.')}</span>
+							</div>
+							<img className={`thumb${idx}`} src={vid.snippet.thumbnails.high.url} />
+						</article>
+					);
+				})}
+			</div>
 		</section>
 	);
 }
