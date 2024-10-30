@@ -30,7 +30,7 @@ export default function MailForm() {
 	return (
 		<div className='mailForm'>
 			<div className='mailTitle'>
-				<p>contact</p>
+				<p>노인장기요양보험에 문의하기</p>
 			</div>
 			<div className='formBox'>
 				{/* form에 전송 이벤트 연결 */}
@@ -38,25 +38,33 @@ export default function MailForm() {
 					{/* 문의자이름, 메일주소 입력받는 상단 영역 */}
 					<div className='upper'>
 						<span>
-							<label htmlFor='uName'>Name</label>
-							<input ref={ref_name} name='user_name' type='text' id='uName' placeholder='Leave your name' />
+							<label htmlFor='uName'>성함</label>
+							<input ref={ref_name} name='user_name' type='text' id='uName' placeholder='보내는 분의 성함을 써주세요' />
 						</span>
 						<span>
-							<label htmlFor='uMail'>E-Mail</label>
-							<input ref={ref_email} name='user_email' type='text' id='uMail' placeholder='Leave your email' />
+							<label htmlFor='uMail'>이메일</label>
+							<input
+								ref={ref_email}
+								name='user_email'
+								type='text'
+								id='uMail'
+								placeholder='연락받으실 이메일을 써주세요'
+							/>
 						</span>
 					</div>
 
 					{/* 문의내용 입력받는 textarea 하단 영역 */}
 					<div className='lower'>
-						<label htmlFor='msg'>Message</label>
-						<textarea ref={ref_msg} name='message' id='msg' placeholder='Leave your message'></textarea>
+						<span>
+							<label htmlFor='msg'>문의내용</label>
+							<textarea ref={ref_msg} name='message' id='msg' placeholder='문의내용을 써주세요'></textarea>
+						</span>
 					</div>
 
 					{/* 전송,취소 버튼 그룹 */}
 					<nav className='btnSet'>
-						<input type='reset' value='Cancel' />
-						<input type='submit' value='Send' />
+						<input type='reset' value='다시쓰기' />
+						<input type='submit' value='보내기' />
 					</nav>
 				</form>
 			</div>

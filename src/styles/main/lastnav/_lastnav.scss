@@ -1,16 +1,18 @@
 .lastNav {
-	width: 100%;
-	height: auto;
+	width: 100vw;
+	height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	// align-content: center;
 
 	.lastNav {
 		width: 80%;
-		height: 40vh;
+		height: 50%;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: center;
+		gap: 66px;
 		margin-top: 1vw;
 		margin-bottom: 1vw;
 
@@ -25,7 +27,7 @@
 			align-items: center;
 
 			h2 {
-				font: 600 1.2rem/1 '' Noto Sans Korean '';
+				font: 600 1.2rem/1 'Noto Sans Korean';
 				margin-bottom: 10px;
 				text-align: left;
 				color: #333;

@@ -1,7 +1,7 @@
-import { infoArr } from '../../data/subpageData';
-import LinkMenu from './subdetail/LinkMenu';
-import NoticeBanner from './subdetail/NoticeBanner';
-import Mail from './subdetail/Mail';
+import { infoArr } from '../../../data/subpageData';
+import LinkMenu from '../subdetail/LinkMenu';
+import NoticeBanner from '../subdetail/NoticeBanner';
+import Mail from '../subdetail/Mail';
 
 export default function Manager() {
 	return (

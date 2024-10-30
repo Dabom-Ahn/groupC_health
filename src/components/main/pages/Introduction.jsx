@@ -14,6 +14,11 @@ export default function Introduction() {
 	]);
 	const [Index, setIndex] = useState(null);
 
+	const handleTabClick = idx => {
+		// 같은 버튼을 누르면 Index를 null로 설정하여 콘텐츠를 닫음
+		setIndex(prevIndex => (prevIndex === idx ? null : idx));
+	};
+
 	return (
 		<section className='introduction'>
 			<div
@@ -31,7 +36,7 @@ export default function Introduction() {
 			{Toggle && (
 				<div className='btnTab'>
 					{Menus.map((menu, idx) => (
-						<button key={idx} onClick={() => setIndex(idx)}>
+						<button key={idx} onClick={() => handleTabClick(idx)}>
 							{menu.label}
 						</button>
 					))}

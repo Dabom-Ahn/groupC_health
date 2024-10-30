@@ -42,7 +42,7 @@ export default function History() {
 			</div>
 			<Swiper
 				slidesPerView={'4'}
-				centeredSlides={true}
+				centeredSlides={false}
 				spaceBetween={30}
 				pagination={{
 					clickable: true

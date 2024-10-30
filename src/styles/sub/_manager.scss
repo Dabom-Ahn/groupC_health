@@ -5,91 +5,141 @@
 	.innermanagersub {
 		.mailForm {
 			width: 100%;
-			height: auto;
-			// border: 1px solid #333;
+			height: 690px;
+			background-color: #b2feff;
 			padding: 10px;
 			display: flex;
 			flex-direction: column;
+			justify-content: center;
 			align-items: center;
+			border-radius: 30px;
+			gap: 30px;
 
 			.mailTitle {
 				width: 60%;
-				height: 40%;
-				border: 3px solid #0522a3;
+				height: 41.33px;
+				border: 3px solid rgb(5, 34, 163);
+				background-color: #eff1f0;
 				border-radius: 20px;
 				padding: 10px;
-				margin-bottom: 20px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
 
 				p {
-					font: 700 1rem/1 'Gothic A1';
+					font: 700 1rem/1 'Noto Sans Korean';
 					text-align: center;
 				}
 			}
 
 			.formBox {
-				width: 100%;
-				// border-right: 1px solid #bbb;
-				padding-top: 7vh;
-
-				label {
-					display: block;
-					font: 500 1rem/1 'orbitron';
-					color: #333;
-					margin-bottom: 20px;
-				}
-
-				input[type='text'],
-				input[type='email'],
-				textarea {
-					border: none;
-					width: 100%;
-					border-bottom: 1px solid #888;
-					padding: 10px 5px;
-					background: transparent;
-					resize: none;
-
-					//placeholer 요소 안쪽의 텍스트 스타일링
-					&::placeholder {
-						color: rgba(var(--keyRGB), 0.6);
-						font: 400 0.8rem/1.2 'raleway';
-					}
-				}
+				width: 90%;
+				height: 100%;
+				// padding: 30px;
+				display: flex;
+				flex-direction: column;
 
 				.upper {
-					width: 100%;
 					display: flex;
-					justify-content: space-between;
-					margin-bottom: 50px;
+					flex-wrap: wrap;
+					justify-content: flex-start;
+					gap: 30px;
+					margin-bottom: 30px;
 
 					span {
-						display: block;
-						width: 48%;
+						width: 100%;
+						height: 20%;
+						border: 3px solid #006eff;
+						background-color: #eff1f0;
+						border-radius: 20px;
+						padding: 10px;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+
+						label {
+							width: 30%;
+							font: 600 1rem/1 'Noto Sans Korean';
+							color: #006eff;
+							text-align: center;
+						}
 
 						input[type='text'],
-						input[type='email'] {
-							display: block;
+						input[type='email'],
+						textarea {
+							border: none;
+							width: 100%;
+							padding: 10px 5px;
+							background: transparent;
+							resize: none;
+
+							//placeholer 요소 안쪽의 텍스트 스타일링
+							&::placeholder {
+								color: rgba(var(--keyRGB), 0.6);
+								font: 400 0.8rem/1.2 'Noto Sans Korean';
+							}
 						}
 					}
 				}
 				.lower {
 					width: 100%;
-					margin-bottom: 10px;
-				}
+					height: 80%;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: flex-start;
 
+					span {
+						width: 100%;
+						height: 100%;
+						border: 3px solid #006eff;
+						border-radius: 20px;
+						background-color: #eff1f0;
+						display: flex;
+						flex-direction: column;
+						flex-wrap: wrap;
+						justify-content: flex-start;
+						padding: 50px;
+
+						label {
+							width: 100%;
+							font: 600 1rem/1 'Noto Sans Korean';
+							color: #006eff;
+							margin-bottom: 20px;
+						}
+
+						textarea {
+							border: none;
+							width: 80%;
+							padding: 10px 5px;
+							background: transparent;
+							resize: none;
+
+							//placeholer 요소 안쪽의 텍스트 스타일링
+							&::placeholder {
+								color: rgba(var(--keyRGB), 0.6);
+								font: 400 0.8rem/1.2 'Noto Sans Korean';
+							}
+						}
+					}
+				}
 				.btnSet {
+					width: 100%;
 					display: flex;
 					gap: 5px;
+					margin-top: 20px;
+					justify-content: flex-end;
 
 					input {
 						display: inline-block;
-						background: rgba(var(--keyRGB), 0.8);
-						border-radius: 3px;
+						background: #333;
+						border-radius: 20px;
 						padding: 10px 20px;
-						font: 300 0.6rem/1 'orbitron';
+						font: 600 1rem/1 'Noto Sans Korean';
 						letter-spacing: 1px;
-						color: #000;
+						color: #eee;
 						cursor: pointer;
-						border: none;
+						border: 1px solid #333;
 						box-shadow: 5px 5px 10px rgba(var(--keyRGB), 0.05);
 					}
 				}

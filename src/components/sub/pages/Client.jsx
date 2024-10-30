@@ -1,7 +1,7 @@
-import { clientArr } from '../../data/subpageData';
-import LinkMenu from './subdetail/LinkMenu';
-import Map from './subdetail/Map';
-import NoticeBanner from './subdetail/NoticeBanner';
+import { clientArr } from '../../../data/subpageData';
+import LinkMenu from '../subdetail/LinkMenu';
+import Map from '../subdetail/Map';
+import NoticeBanner from '../subdetail/NoticeBanner';
 
 export default function Client() {
 	return (

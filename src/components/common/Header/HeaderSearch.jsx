@@ -14,8 +14,8 @@ export default function Search() {
 			setIsLoading(true);
 			setIsOpen(true); // 검색 결과 창 열기
 			try {
-				// Django API에 query 전달 (나중에 실제 API 주소와 연결)
-				const response = await fetch(`/api/search?query=${query}`);
+				// Django API에 query 전달
+				const response = await fetch(`http://127.0.0.1:8000/api/search?query=${query}`);
 				const data = await response.json();
 				setSearchResults(data);
 			} catch (error) {
@@ -82,7 +82,7 @@ export default function Search() {
 					) : searchResults.length > 0 ? (
 						<ul className='searchResults'>
 							{searchResults.map(result => (
-								<li key={result.id}>{result.name}</li>
+								<li key={result.id}>{result.title}</li>
 							))}
 						</ul>
 					) : (
