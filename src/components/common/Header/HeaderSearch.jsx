@@ -50,7 +50,12 @@ export default function Search() {
 		<>
 			<div className='searchForm'>
 				<div className='searchFormDefault'>
-					<input type='text' value={query} onChange={e => setQuery(e.target.value)} placeholder='검색어 입력' />
+					<input
+						type='text'
+						value={query}
+						onChange={e => setQuery(e.target.value)}
+						placeholder='검색어를 입력해주세요'
+					/>
 					<button type='button' onClick={performSearch}>
 						검색
 					</button>

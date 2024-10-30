@@ -1,0 +1,49 @@
+.tabContent {
+	.photos {
+		width: 80%;
+		padding: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		.photosTitle {
+			display: flex;
+			flex-direction: row;
+
+			.gun {
+				width: 10%;
+			}
+
+			.infotitle {
+				width: 80%;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				align-items: center;
+				font: 700 2.5rem/1 'Noto Sans Korean';
+				color: #e3c04d;
+			}
+		}
+	}
+
+	.swiper-container {
+		width: 100%;
+		height: 100%;
+	}
+
+	// .swiper-slide {
+	// 	width: 100vw;
+	// 	height: 100vh;
+	// 	display: flex;
+	// 	flex-wrap: wrap;
+	// 	justify-content: center;
+	// 	align-items: center;
+
+	// 	img {
+	// 		width: 100%;
+	// 		height: 100%;
+	// 		object-fit: cover;
+	// 		border-radius: 8px;
+	// 	}
+	// }
+}

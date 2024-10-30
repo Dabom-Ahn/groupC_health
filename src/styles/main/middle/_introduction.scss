@@ -1,0 +1,55 @@
+.introduction {
+	width: 100vw;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 20px;
+
+	.btnToggle {
+		width: 80%;
+		margin: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		.txt {
+			width: 95.7%;
+			padding: 40px;
+			border-radius: 30px;
+			text-align: center;
+			font: 600 1.4rem/1 'Noto Sans Korean';
+			color: #292929;
+			background-color: #fffed4;
+			cursor: pointer;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		}
+	}
+
+	.btnTab {
+		width: 70%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 10px;
+
+		button {
+			width: 23%;
+			height: 100px;
+			background-color: #ffffe5;
+			border: 1px solid transparent;
+			border-radius: 20px;
+			margin-bottom: 10px;
+			padding: 10px;
+			font: 600 1.2rem/1 'Noto Sans Korean';
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			cursor: pointer;
+		}
+	}
+}
+
+.btnToggle {
+	.txt:hover {
+		font: 800 1.6rem/1.2 'Noto Sans Korean';
+	}
+}

@@ -4,7 +4,7 @@ $mobile: 599px;
 
 //font
 // @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Homemade+Apple&family=Sacramento&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Homemade+Apple&family=Noto+Sans+KR:wght@100..900&family=Sacramento&family=Sriracha&display=swap');
 
 //common
 @import './common/reset';
@@ -13,10 +13,14 @@ $mobile: 599px;
 
 //main
 @import './main/home';
-@import './main/mainnav';
-@import './main/introduction';
-@import './main/lastnav';
-@import './main/youtube';
+@import './main/mainnav/mainnav';
+@import './main/middle/introduction';
+@import './main/middle/history';
+@import './main/middle/intro';
+@import './main/middle/noticebanner';
+@import './main/lastnav/lastnav';
+@import './main/middle/youtube';
+@import './main/middle/youtubedetail';
 
 //sub
 @import './sub/sublayout';

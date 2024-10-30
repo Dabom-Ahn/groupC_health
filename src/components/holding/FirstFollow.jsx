@@ -1,5 +1,5 @@
-import ImageSlider from './ImageSlider'; // ImageSlider 컴포넌트 import
-import { process1, process2 } from '../../../../data/firstvisitImagedata';
+import ImageSlider from './ImageSlider';
+import { process1, process2 } from '../../../data/firstvisitImagedata';
 
 export default function FirstFollow({ showGallery, toggleGallery }) {
 	return (

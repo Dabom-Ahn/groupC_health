@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import lastNavData from '../../../../data/lastNavdata';
+import lastNavData from '../../../data/lastNavdata';
 
 export default function LastNav() {
 	const handleLinkClick = link => {

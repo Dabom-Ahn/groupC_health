@@ -5,7 +5,7 @@ const fetchYoutube = async ({ queryKey }) => {
 	const baseURL = 'https://www.googleapis.com/youtube/v3/playlistItems';
 	const pidA = 'PL5-8bSq0iZqRjJlMEJ7RurUs8MzZHUR2M';
 	const pidB = 'PL5-8bSq0iZqRfszoKclkcqGfFhsLX23IS';
-	const num = 5;
+	const num = 6;
 	let url = '';
 	const urlA = `${baseURL}?part=snippet&playlistId=${pidA}&key=${api_key}&maxResults=${num}`;
 	const urlB = `${baseURL}?part=snippet&playlistId=${pidB}&key=${api_key}&maxResults=${num}`;

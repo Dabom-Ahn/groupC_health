@@ -1,11 +1,12 @@
 .header {
 	width: 100vw;
 	height: 30%;
-	padding: 5vh;
+	padding: 3vh;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
+	background-color: #eff1f0;
 
 	.upperheader {
 		width: 100%;
@@ -46,10 +47,11 @@
 					outline: none;
 					border: 1px solid transparent;
 					border-radius: 20px;
-					font: 100 0.8rem/1 'Gothic A1';
-					text-align: center;
-					padding: 2px;
+					font: 100 0.8rem/1 'Noto Sans Korean';
+					text-align: left;
+					padding: 20px;
 					line-height: 3vh;
+					background-color: #eff1f0;
 				}
 
 				button {
@@ -57,7 +59,7 @@
 					height: 3vh;
 					border: 1px solid #db456a;
 					border-radius: 20px;
-					font: 600 0.8rem/1 'Gothic A1';
+					font: 600 0.8rem/1 'Noto Sans Korean';
 					text-align: center;
 					padding: 2px;
 					background-color: #db456a;
@@ -84,12 +86,12 @@
 				margin-bottom: 15px;
 				border-radius: 3px;
 				border: 0px solid transparent;
-				font: 600 0.8rem/1 'Gothic A1';
+				font: 600 0.8rem/1 'Noto Sans Korean';
 				line-height: 20px;
 				padding: 2px;
 			}
 			p {
-				font: 100 1rem/1 'Gothic A1';
+				font: 100 1rem/1 'Noto Sans Korean';
 			}
 		}
 	}
@@ -107,7 +109,7 @@
 		.menuItem2 a,
 		.menuItem3 a,
 		.menuItem4 a {
-			font: 600 1rem/1 'Sacramento';
+			font: 600 1rem/1 'Noto Sans Korean';
 		}
 
 		.modalMenu0,
@@ -126,7 +128,7 @@
 			.submenuItem2,
 			.submenuItem3,
 			.submenuItem4 {
-				font: 100 0.8rem/1 'Gothic A1';
+				font: 100 0.8rem/1 'Noto Sans Korean';
 			}
 		}
 	}

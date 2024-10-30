@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import useCombineText from '../../hooks/useCombineText';
+import useCombineText from '../../../../hook/useCombineText';
 
 export default function YoutubeDetail() {
 	const { id } = useParams();
@@ -19,7 +19,8 @@ export default function YoutubeDetail() {
 	}, [id]);
 
 	return (
-		<section title={YoutubeVid?.snippet.title}>
+		<section className='youtubeDetail'>
+			<h3 className='title'>{YoutubeVid?.snippet.title}</h3>
 			<figure className='vidFrame'>
 				<iframe
 					width='100%'
@@ -27,9 +28,10 @@ export default function YoutubeDetail() {
 					title='youtube'
 					src={`https://www.youtube.com/embed/${YoutubeVid?.snippet.resourceId.videoId}`}></iframe>
 			</figure>
-
-			<p>{YoutubeVid?.snippet.description}</p>
-			<span className='date'>{combineText(YoutubeVid?.snippet.publishedAt.split('T')[0], '-', '.')}</span>
+			<div className='textbox'>
+				<p>{YoutubeVid?.snippet.description}</p>
+				<span className='date'>{combineText(YoutubeVid?.snippet.publishedAt.split('T')[0], '-', '.')}</span>
+			</div>
 		</section>
 	);
 }

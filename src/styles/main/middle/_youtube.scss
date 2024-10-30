@@ -1,0 +1,88 @@
+.youtube {
+	width: 100vw;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	.intro {
+		width: 80%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 10px;
+		gap: 4vh;
+		margin-left: 20vh;
+		margin-bottom: 4vh;
+		img {
+			width: 100%;
+		}
+	}
+	.youtubecontainer {
+		width: 80%;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: space-between;
+
+		.title {
+			border: 1px solid transparent;
+
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			background-color: #ffffef;
+			border-radius: 20px;
+			padding: 10px;
+			margin: 10px;
+
+			h2 {
+				font: 600 3rem/1 'Noto Sans Korean';
+				text-align: center;
+			}
+		}
+		.contentbox {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-top: 10px;
+
+			.content {
+				width: 30%;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				margin: 10px;
+				padding: 10px;
+
+				.youtubetitle {
+					width: 100%;
+					font: 600 1rem/1 'Noto Sans Korean';
+					color: #000;
+					text-align: center;
+					margin-bottom: 10px;
+				}
+
+				// .txt {
+				// 	width: 80%;
+
+				// 	p {
+				// 		font: 600 0.8rem/1 '' Noto Sans Korean '';
+				// 		color: #000;
+				// 		text-align: center;
+				// 	}
+
+				// 	span {
+				// 		font: 300 0.6rem/1 'Noto Sans Korean';
+				// 	}
+				// }
+
+				img {
+					width: 100%;
+					height: auto;
+					object-fit: cover;
+
+					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+				}
+			}
+		}
+	}
+}

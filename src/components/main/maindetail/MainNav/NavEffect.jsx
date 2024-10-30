@@ -4,8 +4,8 @@ export default function NavEffect({ data, idx, isActive, onClick, selectedButton
 	const navigate = useNavigate();
 
 	const navArrKor = {
-		client: '보호자',
-		manager: '관리자'
+		client: '보호자페이지 바로가기',
+		manager: '관리자페이지 바로가기'
 	};
 
 	// 클릭 이벤트 핸들러
@@ -43,7 +43,7 @@ export default function NavEffect({ data, idx, isActive, onClick, selectedButton
 				cursor: 'pointer'
 			}}>
 			<h3>{navArrKor[data] || data}</h3>
-			<img src={`pic/mainnav/${data}.png`} alt={`${navArrKor[data] || data} 이미지`} />
+			{/* <img src={`pic/mainnav/${data}.png`} alt={`${navArrKor[data] || data} 이미지`} /> */}
 		</div>
 	);
 }
