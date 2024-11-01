@@ -16,7 +16,7 @@ export default function MainNoticeBanner() {
 				</div>
 				<div className='board'>
 					<Link to='https://www.nhis.or.kr/nhis/policy/wbhadd04300m01.do' className='board1'>
-						<img src='../../pic/sub/noticeBanner/mainfix.png' alt='게시판 바로가기' />
+						<img src='/pic/sub/noticeBanner/mainfix.png' alt='게시판 바로가기' />
 					</Link>
 				</div>
 			</div>

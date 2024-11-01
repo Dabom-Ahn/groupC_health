@@ -38,7 +38,7 @@ export default function History() {
 	return (
 		<div className='photos'>
 			<div className='photosTitle'>
-				<img src='../../../../pic/character/건이.png' className='gun' alt='캐릭터' />
+				<img src='/pic/character/건이.png' className='gun' alt='캐릭터' />
 				<h2 className='infotitle'>장기요양보험이 걸어온길</h2>
 			</div>
 			<div className='historytxt'>
