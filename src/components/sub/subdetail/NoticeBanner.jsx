@@ -15,7 +15,8 @@ export default function NoticeBanner() {
 		}
 
 		if (category) {
-			fetch(`http://127.0.0.1:8000/api/posts/?category=${category}`)
+			// 배포된 Django 서버 URL로 변경
+			fetch(`https://group-c-dgango.vercel.app/api/posts/?category=${category}`)
 				.then(response => response.json())
 				.then(data => setPosts(data))
 				.catch(error => console.error('Error fetching posts:', error));
