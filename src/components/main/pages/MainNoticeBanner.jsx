@@ -6,10 +6,10 @@ export default function MainNoticeBanner() {
 		<section className='noticeBanner'>
 			<div className='noticeBanner'>
 				<div className='banneritem'>
-					{bannerData.map(bannerData => (
-						<div key={bannerData.id} className={`banner${bannerData.id}`}>
-							<Link to={bannerData.link} className='board1'>
-								<img src={bannerData.imgSrc} alt={bannerData.alt} />
+					{bannerData.map(banner => (
+						<div key={banner.id} className={`banner${banner.id}`}>
+							<Link to={banner.link} className='board1'>
+								<img src={banner.imgSrc} alt={banner.alt} />
 							</Link>
 						</div>
 					))}
