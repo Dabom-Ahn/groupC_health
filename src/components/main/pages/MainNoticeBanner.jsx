@@ -1,4 +1,4 @@
-import bannerData from '/data/mainnoticedata';
+import bannerData from '../../../data/mainnoticedata';
 import { Link } from 'react-router-dom';
 
 export default function MainNoticeBanner() {
