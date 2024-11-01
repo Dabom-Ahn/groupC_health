@@ -6,18 +6,23 @@ export default function FooterSNS() {
 	const [popupWindow, setPopupWindow] = useState(null);
 
 	const handleBannerClick = () => {
-		const newWindow = window.open('', '배너달기', 'width=600,height=400');
+		const newWindow = window.open(
+			'https://www.longtermcare.or.kr/npbs/banner_desc.jsp',
+			'배너달기',
+			'width=600,height=400'
+		);
 		setPopupWindow(newWindow);
 	};
 
-	// 팝업창 닫힐 때 상태 초기화
+	const checkPopupClosed = () => {
+		if (popupWindow && popupWindow.closed) {
+			setPopupWindow(null);
+		}
+	};
+
 	useEffect(() => {
 		if (popupWindow) {
-			const timer = setInterval(() => {
-				if (popupWindow.closed) {
-					setPopupWindow(null);
-				}
-			}, 500);
+			const timer = setInterval(checkPopupClosed, 500);
 			return () => clearInterval(timer);
 		}
 	}, [popupWindow]);
@@ -35,7 +40,7 @@ export default function FooterSNS() {
 			</button>
 			<button
 				className='footerButton'
-				onClick={() => (window.location.href = 'http://www.nhis.or.kr/helpcom_new/hc_user_main.jsp?longtermcare=Y')}>
+				onClick={() => window.open('http://www.nhis.or.kr/helpcom_new/hc_user_main.jsp?longtermcare=Y', '_blank')}>
 				온라인 상담원 원격지원
 			</button>
 			{popupWindow && <FooterPopup popupWindow={popupWindow} />}

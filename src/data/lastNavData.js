@@ -86,7 +86,7 @@ const lastNavData = [
 				link: 'https://www.longtermcare.or.kr/npbs/r/a/601/npra601m01.web?menuId=npe0000002590'
 			},
 			{
-				name: '부담상한액 초과금 장기요양기관 신고',
+				name: '부담상한액 초과금 신고',
 				link: 'https://www.longtermcare.or.kr/npbs/g/m/108/openIjstDmdDcltMain.web?menuId=npe0000000590'
 			},
 			{

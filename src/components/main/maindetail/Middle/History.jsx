@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
+import HistoryTxt from './HistoryTxt';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -39,6 +40,9 @@ export default function History() {
 			<div className='photosTitle'>
 				<img src='../../../../pic/character/건이.png' className='gun' alt='캐릭터' />
 				<h2 className='infotitle'>장기요양보험이 걸어온길</h2>
+			</div>
+			<div className='historytxt'>
+				<HistoryTxt />
 			</div>
 			<Swiper
 				slidesPerView={'4'}

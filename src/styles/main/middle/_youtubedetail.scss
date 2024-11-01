@@ -5,24 +5,27 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 40px;
+	background-color: #eff1f0;
+	gap: 40px;
 
 	.title {
 		width: 80%;
-		font: 700 5rem/1.3 'Noto Sans Korean';
+		font: 700 3rem/1.3 'Noto Sans Korean';
 		text-align: center;
 	}
 
 	.vidFrame {
 		width: 80%;
-		height: 80%;
+		height: 100%;
 		overflow: hidden;
-		margin-bottom: 40px;
+		padding-bottom: 10px;
 
 		iframe {
 			border: 0;
 			width: 100%;
 			height: 100%;
-			object-fit: cover;
+			object-fit: contain;
 		}
 	}
 	.textbox {
@@ -34,13 +37,13 @@
 			width: 80%;
 			font: 300 1rem/1.3 'Noto Sans Korean';
 			color: #555;
-			margin-bottom: 30px;
+			margin-bottom: 20px;
 		}
 
 		.date {
 			width: 80%;
 			font: 400 1rem/1 'Noto Sans Korean';
-			color: orange;
+			color: 555;
 		}
 	}
 }

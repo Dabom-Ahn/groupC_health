@@ -11,6 +11,7 @@
 		flex-direction: row;
 		justify-content: flex-start;
 		padding: 20px;
+		margin-bottom: 20px;
 
 		.gun {
 			width: 5%;
@@ -23,6 +24,35 @@
 			align-items: center;
 			font: 700 2.5rem/1 'Noto Sans Korean';
 			color: #e3c04d;
+		}
+	}
+}
+
+.historytxt {
+	width: 80%;
+	height: auto;
+	padding: 10px;
+	margin-bottom: 30px;
+	.historyList {
+		.historyItem {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+
+			h3 {
+				font: 600 1rem/1 'Noto Sans Korean';
+				padding-bottom: 10px;
+			}
+
+			p {
+				font: 400 1rem/1 'Noto Sans Korean';
+				padding-bottom: 10px;
+			}
+
+			.subDetails {
+				font: 300 1rem/1 'Noto Sans Korean';
+				padding-bottom: 30px;
+			}
 		}
 	}
 }
