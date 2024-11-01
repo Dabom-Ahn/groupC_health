@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import bannerImage from '../../../../pic/footericons/insertbanner.jpg';
+import bannerImage from '/pic/footericons/insertbanner.jpg';
 
 export default function FooterPopup({ popupWindow }) {
 	useEffect(() => {

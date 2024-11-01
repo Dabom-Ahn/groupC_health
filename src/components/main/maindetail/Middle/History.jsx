@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import HistoryTxt from './HistoryTxt';
-import GunImage from '../../../../../pic/character/gun.png';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import GunImage from '/pic/character/gun.png';
 
 export default function History() {
 	const [images, setImages] = useState([]);
@@ -39,8 +39,7 @@ export default function History() {
 	return (
 		<div className='photos'>
 			<div className='photosTitle'>
-				<img src={GunImage} className='gun' alt='캐릭터' />
-				<h2 className='infotitle'>장기요양보험이 걸어온길</h2>
+				<img src={GunImage} className='gun' alt='캐릭터' />;<h2 className='infotitle'>장기요양보험이 걸어온길</h2>
 			</div>
 			<div className='historytxt'>
 				<HistoryTxt />

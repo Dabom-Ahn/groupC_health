@@ -1,12 +1,11 @@
-import hwellLogo from '../../../../pic/logo/logo_2.png';
-
+import footerlogo from '/pic/logo/logo_2.png';
 export default function FooterInfo() {
 	return (
 		<>
 			<div className='footerInfo'>
 				<div className='footerLogo'>
 					<h1>
-						<img src={hwellLogo} alt='국민건강보험 로고' />
+						<img src={footerlogo} alt='국민건강보험 로고' />
 					</h1>
 				</div>
 				<div className='footerTxt'>
