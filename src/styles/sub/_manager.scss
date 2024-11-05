@@ -68,7 +68,7 @@
 						input[type='text'],
 						input[type='email'],
 						textarea {
-							border: none;
+							border: 1px solid transparent;
 							width: 100%;
 							padding: 10px 5px;
 							background: transparent;
@@ -78,6 +78,8 @@
 							&::placeholder {
 								color: rgba(var(--keyRGB), 0.6);
 								font: 400 0.8rem/1.2 'Noto Sans Korean';
+								background: transparent;
+								border: 1px solid transparent;
 							}
 						}
 					}
@@ -96,9 +98,10 @@
 						border-radius: 20px;
 						background-color: #eff1f0;
 						display: flex;
-						flex-direction: column;
+						// flex-direction: column;
 						flex-wrap: wrap;
 						justify-content: flex-start;
+						align-items: center;
 						padding: 50px;
 
 						label {
@@ -110,7 +113,8 @@
 
 						textarea {
 							border: none;
-							width: 80%;
+							width: 100%;
+							height: 100%;
 							padding: 10px 5px;
 							background: transparent;
 							resize: none;
