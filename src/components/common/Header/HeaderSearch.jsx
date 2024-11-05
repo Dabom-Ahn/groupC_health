@@ -15,7 +15,7 @@ export default function Search() {
 			setIsOpen(true); // 검색 결과 창 열기
 			try {
 				// Django API에 query 전달
-				const response = await fetch(`https://group-c-dgango.vercel.app/api/search/?query=${query}`);
+				const response = await fetch(`https://group-c-dgango.vercel.app/api/search?query=${query}`);
 				const data = await response.json();
 				setSearchResults(data);
 			} catch (error) {
